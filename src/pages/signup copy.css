@@ -1,0 +1,154 @@
+.main-login{
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    background:#e6e1e1;
+    align-items: center;
+}
+.login-contain{
+    height:75vh;
+    width:80vw;
+    background-color:white;
+    margin:5rem auto;
+    box-shadow:0.5rem 5.5rem 2rem -2rem white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-side, .right-side{
+    margin:2rem 2rem;
+    height:80%;
+    width:100%;
+    background-color: white;
+    box-shadow: 0.5rem 5.5rem 2rem -2rem rgb(2, 23, 29);
+}
+.img-login{
+    width:100%;
+    height:60%;
+    transition: 3ease;
+
+}
+.left-side{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    input{
+        display: flex;
+        outline:none;
+        border: none;
+        border-bottom:#99b1aa;
+        height: 1rem;
+        width:100vw;
+        margin:auto;
+        margin-bottom:1.5rem;
+        padding: 0.2 rem 1rem;
+
+        &:focus{
+            outline: none;
+            border:none;
+        }
+
+    }
+
+}
+.read-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 20px;
+    background:rgb(124, 59, 5);
+    color:white;
+    font-size:19px;
+    text-decoration: none;
+    border-radius:20px;
+    margin-top: 15px;
+    transition:0.3s ease;
+
+ }
+.read-more:hover{
+    background-color: #0a3629;
+
+}
+
+.left-side h3{
+    border-bottom: 5px solid #80838d;
+    width:30vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 35px;
+    color:#80838d;
+}
+
+label{
+    font-size:20px;
+    color:#80838d;
+}
+.input{
+    color:#80838d;
+    width:20vw;
+    height:4vh;
+    border:none;
+    border-bottom: 3px solid rgb(124, 59, 5);
+   
+}
+
+.create{
+    color:rgb(236, 76, 17);
+    
+}
+.create:hover{
+    color:rgba(71, 67, 6, 0.521);
+    
+}
+
+
+
+
+
+.btn{
+    background-color: rgb(11, 46, 46);
+    color:white;
+    width:7vw;
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.btn::after
+{
+    background-color: rgb(6, 122, 117);
+    color:white;
+    width:7vw;
+    height:5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.right-side p{
+    color:rgba(64, 72, 80, 0.959);
+    background: black;
+    font-size:14px;
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:400px)
+{
+    .right-side p{
+        color:rgba(64, 72, 80, 0.959);
+        background: black;
+        font-size:clamp(2rem,1rem+3vw,3rem);
+        height:20vh;
+       
+    }
+ .read-more{
+    height:6vh;
+    font-size:14px
+ }
+}
